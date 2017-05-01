@@ -7,7 +7,7 @@ handlers:
   script: teamapp.app
 
 - url: /index\.html
-  script: home.app
+  script: teamapp.app
 
 - url: /stylesheets
   static_dir: stylesheets
