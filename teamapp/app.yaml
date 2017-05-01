@@ -1,10 +1,11 @@
+application: teamapp
 runtime: python27
 api_version: 1
 threadsafe: yes
 
 handlers:
 - url: .*
-  script: teamapp.app
+  script: main.app
 
 - url: /index\.html
   script: teamapp.app
