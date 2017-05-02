@@ -9,15 +9,10 @@ handlers:
 - url: /index\.html
   script: main.app
 
-- url: /stylesheets
-  static_dir: static/stylesheets
+- url: /(.*)
+  static_files: static_files/\1
+  upload: ./static_files/(.*)
 
-- url: /bootstrap
-  static_dir: bootstrap 
-
-- url: /(.*\.(gif|png|jpg))$
-  static_files: static/\1
-  upload: static/.*\.(gif|png|jpg)$
 
 - url: /admin/.*
   script: admin.app
